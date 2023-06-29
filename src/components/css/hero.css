@@ -1,0 +1,116 @@
+main {
+    text-align: center;
+    /* border: 1px solid white; */
+    line-height: 3.5rem;
+    padding: 40px 5% !important;
+}
+
+main p {
+    font-size: var(--font-size-small);
+}
+
+h1 {
+    font-size: 40px;
+    color: var(--accent-color);
+}
+
+h1 ~ p {
+    color: whitesmoke;
+}
+
+.btn-container {
+    /* border: 1px solid red; */
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+}
+
+.btn {
+    display: inline-block;
+    width: max-content;
+    padding: 0px 20px;
+    border-radius: 5px;
+    /* margin: 0 20px; */
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.dwnld-btn {
+    background: transparent;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.dwnld-btn::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    transform: scaleY(0);
+    transform-origin: top left;
+    transform: translate(-100%, -100%);
+    z-index: -1;
+    transition: var(--transition);
+}
+
+.dwnld-btn:hover::before {
+    transform: scaleY(1);
+    transform: translate(-50%, -50%);
+}
+
+.dwnld-btn:hover {
+    color: var(--primary-color);
+}
+
+.talk-btn {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+.talk-btn:hover {
+    background-color: var(--accent-color-on-hover);
+    box-shadow: 0 0 10px 2px hsl(175, 84%, 39%);
+}
+
+.sub-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.social-media-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid white; */
+    font-size: var(--font-size-large);
+    margin-bottom: 20px;
+}
+
+.social-media-links::after {
+    content: '';
+    width: 2px;
+    height: 3rem;
+    background-color: var(--secondary-color);
+}
+
+.img-container {
+    border-radius: 100px 100px 0 0;
+    /* border: 2px solid red; */
+    z-index: 111;
+    overflow: hidden;
+    max-width: 333px;
+    width: 100%;
+    height: auto;
+    background: url('../../../public/assets/MAin_img.jpg') no-repeat center;
+    background-size: contain;
+}
+
+.scroll-down {
+    transform: rotate(90deg);
+}
