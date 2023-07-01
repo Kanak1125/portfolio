@@ -1,4 +1,8 @@
-# Cloning this repo
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## To clone this repo
 
 Install these npm dependencies...
 
@@ -10,10 +14,6 @@ Unsplash-attrib:
 https://unsplash.com/photos/4g-DwlCa-Qw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 Photo by: Dan Russo
 Link: https://unsplash.com/@danjrusso
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
