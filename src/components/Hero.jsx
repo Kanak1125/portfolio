@@ -16,11 +16,11 @@ const Hero = () => {
       </div>
       <div className="sub-section"> 
         <div className="social-media-links">
-          <a href="https://github.com/Kanak1125" target='_blank'>
+          <a href="https://github.com/Kanak1125"  target='_blank' rel="noreferrer">
             <FontAwesomeIcon icon={faGithub} />
           </a>
           <a href="https://www.linkedin.com/in/kanak-shakya-41a464207/" target='_blank'>
-            <FontAwesomeIcon icon={faLinkedin} />
+            <FontAwesomeIcon icon={faLinkedin} rel="noreferrer" />
           </a>
         </div> 
         <div className="img-container">

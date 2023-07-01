@@ -5,14 +5,14 @@ import { faHome, faUser, faBriefcase, faEnvelope } from '@fortawesome/free-solid
 import './css/floatingNav.css';
 
 const FloatingNav = () => {
-  const [activeClass, setActiveClass] = useState('#');
+  const [activeClass, setActiveClass] = useState('#home');
 
   return (
     <div className='floating-nav'>
       <a 
-        href="#" 
-        className={activeClass === '#' ? 'active' : ''} 
-        onClick={() => setActiveClass('#')}
+        href="#home" 
+        className={activeClass === '#home' ? 'active' : ''} 
+        onClick={() => setActiveClass('#home')}
       >
         <FontAwesomeIcon icon={faHome} className='custom-icon'/>
       </a>

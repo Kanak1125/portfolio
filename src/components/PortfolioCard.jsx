@@ -9,7 +9,7 @@ const PortfolioCard = (props) => {
         </div>
         <div className="about-project">
           <h5>{title}</h5>
-          <a href={url} className='btn dwnld-btn' target='_blank'>Github</a>
+          <a href={url} className='btn dwnld-btn' target='_blank' rel="noreferrer">Github</a>
         </div>
     </div>
   )
