@@ -19,8 +19,8 @@ const Hero = () => {
           <a href="https://github.com/Kanak1125"  target='_blank' rel="noreferrer">
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a href="https://www.linkedin.com/in/kanak-shakya-41a464207/" target='_blank'>
-            <FontAwesomeIcon icon={faLinkedin} rel="noreferrer" />
+          <a href="https://www.linkedin.com/in/kanak-shakya-41a464207/" target='_blank' rel="noreferrer">
+            <FontAwesomeIcon icon={faLinkedin}/>
           </a>
         </div> 
         <div className="img-container">
