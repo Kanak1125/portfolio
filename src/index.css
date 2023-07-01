@@ -13,6 +13,8 @@
   --secondary-color: hsl(0, 0%, 100%);
   --accent-color: hsl(175, 84%, 39%);
   --accent-color-on-hover: hsl(175, 84%, 36%);
+  --card-bg-color: hsl(200, 50%, 25%);
+  --text-secondary-color: hsl(0, 0%, 60%);
 
   --container-w-lg: 75%;
   --container-w-md: 86%;
@@ -24,6 +26,10 @@
   --font-size-heading: 24px;
 
   --transition: all 300ms linear;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

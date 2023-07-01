@@ -1,0 +1,37 @@
+.floating-nav {
+    width: max-content;
+    background-color: hsl(0, 0%, 100%, 0.15);
+    position: fixed;
+    bottom: 4vh;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    padding: 7.5px 16px;
+    display: flex;
+    column-gap: 1.25rem;
+    backdrop-filter: blur(15px);
+    z-index: 111;
+}
+
+.floating-nav a {
+    --padding: 0.9rem;
+    padding: var(--padding);
+    border-radius: 50%;
+    text-align: center;
+    line-height: calc(var(--padding) / 2);
+    display: block;
+    transition: var(--transition);
+}
+
+.floating-nav a:hover {
+    background-color: hsl(0, 0%, 0%, 0.4);
+}
+
+.floating-nav a.active {
+    background-color: var(--accent-color-on-hover);
+}
+
+.custom-icon {
+   width: 16px;
+   height: 16px;
+}

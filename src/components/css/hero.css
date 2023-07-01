@@ -1,8 +1,8 @@
 main {
     text-align: center;
-    /* border: 1px solid white; */
     line-height: 3.5rem;
     padding: 40px 5% !important;
+    z-index: -1;
 }
 
 main p {
@@ -19,15 +19,15 @@ h1 ~ p {
 }
 
 .btn-container {
-    /* border: 1px solid red; */
     margin: 40px 0;
     display: flex;
+    align-items: center;
     justify-content: center;
     column-gap: 3rem;
 }
 
 .btn {
-    display: inline-block;
+    display: block;
     width: max-content;
     padding: 0px 20px;
     border-radius: 5px;
@@ -79,38 +79,77 @@ h1 ~ p {
 
 .sub-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-end;
+    position: relative;
+    color: var(--accent-color);
+    margin-top: 60px;
 }
 
 .social-media-links {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 1px solid white; */
     font-size: var(--font-size-large);
-    margin-bottom: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.social-media-links > * {
+    width: 50px;
+    color: var(--accent-color);
 }
 
 .social-media-links::after {
     content: '';
     width: 2px;
-    height: 3rem;
-    background-color: var(--secondary-color);
+    height: 5rem;
+    background-color: var(--accent-color);
 }
 
 .img-container {
-    border-radius: 100px 100px 0 0;
-    /* border: 2px solid red; */
-    z-index: 111;
+    border-radius: 200px 200px 0 0;
+    z-index: -1;
     overflow: hidden;
     max-width: 333px;
     width: 100%;
-    height: auto;
-    background: url('../../../public/assets/MAin_img.jpg') no-repeat center;
-    background-size: contain;
+    height: 500px;
+    background: url('../../../public/assets/staring_at_nature.jpg'), linear-gradient(to bottom, var(--accent-color), var(--primary-color));
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
 }
 
 .scroll-down {
+    position: absolute;
+    right: -30px;
+    bottom: 20px;
     transform: rotate(90deg);
+    color: var(--accent-color);
+}
+
+@media (max-width: 834px) {
+    .social-media-links,
+    .scroll-down {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    main {
+        line-height: 3rem;
+        padding: 28px 5% !important;
+    }
+
+    h1 {
+        font-size: var(--font-size-heading);
+    }
+
+    .btn-container {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2rem;
+        font-size: var(--font-size-small);
+    }
 }

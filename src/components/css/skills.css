@@ -1,0 +1,60 @@
+#skills > p {
+    text-align: center;
+}
+
+.logos-container {
+    overflow: hidden;
+    padding: 60px 0;
+    white-space: nowrap;
+    position: relative;
+    margin-top: 20px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos-slider {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+
+.logos-container:hover .logos-slider{
+    animation-play-state: paused;
+}
+
+.logos-slider img {
+    height: 80px;
+    margin: 0 60px;
+}
+
+.logos-container::before,
+.logos-container::after {
+    content: '';
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.logos-container::before {
+    left: 0;
+}
+
+.logos-container::after {
+    z-index: -1;
+    right: 0;
+}
+
+@media (max-width: 834px) {
+    .logos-slider img {
+        margin: 0 40px;
+    }
+}

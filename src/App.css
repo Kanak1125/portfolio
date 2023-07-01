@@ -1,18 +1,25 @@
 .container {
+  z-index: -1;
+}
+
+main,
+section {
   max-width: 1400px;
   margin: 0 auto;
+}
+
+.overflowed {
+  overflow: hidden;
 }
 
 .container > * {
   padding: 0 5%;
 }
 
+section {
+  padding: 3rem 5% !important;
+}
+
 a {
   color: var(--secondary-color);
 }
-
-/* @media (max-width: 834px) {
-  .container > * {
-    padding: 0;
-  }
-} */
