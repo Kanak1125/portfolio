@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## To clone this repo
+## After cloning this repo
 
 Install these npm dependencies...
 
