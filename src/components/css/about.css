@@ -31,6 +31,18 @@
     transform: rotate(-2deg);
     transition: var(--transition);
     line-height: normal;
+    transition: all 300ms linear;
+}
+
+.img-container-2, .main-container {
+    transform: translateY(100px);
+    opacity: 0.1;
+}
+
+.img-container-2.show,
+.main-container.show {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .img-container-2 img {
@@ -48,6 +60,7 @@
 
 .main-container {
     text-align: left;
+    transition: all 600ms linear;
 }
 
 .card-container {

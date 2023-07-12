@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import useIntersectionObserver from './hooks/useIntersectionObserver';
 
 const PortfolioCard = (props) => {
     const {imgUrl, title, url} = props;
+    const targetRef = useRef(null);
+
+    useIntersectionObserver(targetRef);
+
   return (
-    <div className='project-card'>
+    <div className='project-card' ref={targetRef}>
         <div className="project-img-container">
             <img src={`assets/${imgUrl}`} alt="" />
         </div>
