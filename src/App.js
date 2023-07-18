@@ -1,5 +1,5 @@
 import './App.css';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import FloatingNav from './components/FloatingNav.jsx';
@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 
 function App() {
   const [showFloatingNav, setShowFloatingNav] = useState(false);
-  const ref = useRef(null);
+  // const ref = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,7 +26,6 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // const targetElement = document.querySelector('.container');
   // useFadeIn(ref, 500);
 
   return (
