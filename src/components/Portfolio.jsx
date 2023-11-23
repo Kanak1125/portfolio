@@ -3,20 +3,26 @@ import './css/portfolio.css';
 import PortfolioCard from './PortfolioCard'
 
 const Portfolio = () => {
-  const projects = [{
+  const projects = [
+  {
+    imgUrl: 'online-store-ss.png',
+    title: 'Online store',
+    url: 'https://github.com/Kanak1125/online-store'
+  },
+  {
+    imgUrl: 'language_learning_app_ss.png',
+    title: 'Language Learning Flashcard App',
+    url: 'https://github.com/Kanak1125/language-learning-flashcards-app'
+  },
+  {
+    imgUrl: 'scholaract ss.png',
+    title: 'Scholaract (Learning Management System)',
+    url: 'https://github.com/Kanak1125/Scholaract'
+  },
+  {
     imgUrl: 'photo-editor-app-ss.jpg',
     title: 'Photo editor app',
     url: 'https://github.com/Kanak1125/photo-editor-app'
-  },
-  {
-    imgUrl: 'tenzies-ss.jpg',
-    title: 'Tenzies',
-    url: 'https://github.com/Kanak1125/tenzies-game'
-  },
-  {
-    imgUrl: 'personal_site_ss.jpg',
-    title: 'Personal site',
-    url: 'https://github.com/Kanak1125/personal-website'
   },
   {
     imgUrl: 'space_invaders_ss.jpg',
@@ -24,15 +30,11 @@ const Portfolio = () => {
     url: 'https://github.com/Kanak1125/space-invaders'
   },
   {
-    imgUrl: 'pixel_art_grid_ss.jpg',
-    title: 'Pixel Art grid',
-    url: 'https://github.com/Kanak1125/my_JS_app_projects/tree/main/my-web-projects/Pixel%20Art%20Grid'
+    imgUrl: 'tenzies-ss.jpg',
+    title: 'Tenzies',
+    url: 'https://github.com/Kanak1125/tenzies-game'
   },
-  {
-    imgUrl: 'snake_game_ss.jpg',
-    title: 'Snake game',
-    url: 'https://github.com/Kanak1125/snake-game'
-  }]
+  ]
 
   return (
     <section id='works'>
