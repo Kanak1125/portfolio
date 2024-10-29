@@ -11,7 +11,7 @@ const Hero = () => {
       <h1>Kanak Shakya</h1>
       <p>Front end Web developer</p>
       <div className="btn-container">
-        <a href={'/assets/Kanak-Shakya-CV-main.pdf'} className='btn dwnld-btn' download>Download CV</a>
+        <a href={'/assets/resume.pdf'} className='btn dwnld-btn' download>Download CV</a>
         <a href='#contact' className='btn talk-btn'>Let's Talk</a>
       </div>
       <div className="sub-section"> 
