@@ -1,17 +1,22 @@
 import React from 'react'
 import './css/skills.css';
 
+import skills from '../constants/skills';
+
 const Skills = () => {
   const logoSlider = (
     <div className="logos-slider">
-          <img src="assets/html5.png" alt="html5-logo" />
-          <img src="assets/css3.png" alt="css3-logo" />
-          <img src="assets/js.png" alt="js-logo" />
-          <img src="assets/react-logo.png" alt="react-logo"/>
-          <img src="assets/bootstrap-logo.png" alt="bootstrap-logo" />
-          <img src="assets/git-logo.png" alt="git-logo" />
-          <img src="assets/github-logo.png" alt="github-logo" />
-        </div>
+      {
+        skills.map(item => (
+          <img 
+            key={item.title}
+            src={`assets/${item.image}`} 
+            alt={item.alt} 
+            title={item.title}  
+          />
+        ))
+      }
+    </div>
   )
   return (
     <section id='skills'>

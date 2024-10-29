@@ -9,12 +9,12 @@ const About = () => {
   const card = [{
     icon: faBriefcase,
     title: "Experience",
-    details: "Lorem epsum"
+    details: "6 months"
   },
   {
     icon: faUsers,
     title: "Clients",
-    details: "Lorem epsum"
+    details: "2"
   },
   {
     icon: faBriefcase,
@@ -48,7 +48,7 @@ const About = () => {
             ))}
           </div>
           <div className="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque mollitia dolore quaerat repellat commodi maxime quam excepturi illum pariatur consequuntur quis vitae aspernatur sint dignissimos nemo, quisquam voluptas reiciendis ut.
+            I'm a passionate web developer with a keen interest in CI/CD workflows, currently exploring GitHub Actions to streamline development and deployment processes.
           </div>
           <a href='#contact' className='btn talk-btn'>Let's Talk</a>
         </div>
